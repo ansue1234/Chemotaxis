@@ -42,10 +42,10 @@
  	}
 
  	void move(){
- 		if(bx<food.x){}	
- 		 bx +=(int)((Math.random()*8)-4);
-	 	 by +=(int)((Math.random()*8)-4);
-	 		
+ 		if(bx<food.x && by<food.y){	
+ 		 bx +=(int)((Math.random()*8));
+	 	 by +=(int)((Math.random()*8));
+	 	}else if(bx<food.x && by<food.y){}	
  	}
  }
 
